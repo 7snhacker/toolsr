@@ -11,17 +11,18 @@ def toolsr():
     pkgs = print("1- install Packages")
     tools = print("2- Show tools")
     toolsr = print("3- install all tools")
-    update = print("4- Update script")
+    reinstall = print("2- Reinstall script ( Update )")
     inp = input("$ ")
     if inp == "3":
         os.system("clear")
-        os.system("apt install metasploit-framework sqlmap hash-identifier uniscan weevely backdoor-factory burpsuite armitage websploit john johnny xsser wireshark set aircrack-ng masscan wpscan jsql beef-xss nmap -y")
+        os.system("apt install metasploit-framework sqlmap hash-identifier uniscan weevely backdoor-factory burpsuite armitage websploit john johnny xsser wireshark set aircrack-ng masscan wpscan jsql beef-xss nmap acccheck enum4linux exploitdb p0f parsero sfuzz sqlninja ghost-phisher mdk3 -y")
         os.system("apt install git -y && git clone git://git.kali.org/packages/gr-scan.git")
+        os.system("clear")
+        os.system("ls")
     elif inp == "4":
         os.system("git clone https://github.com/7snhacker/toolsr.git")
         os.system("rm toolsr.py")
         os.system("rm README.md")
-        os.system("clear")
         os.system("ls")
     elif inp == "1":
          os.system("clear")
@@ -52,6 +53,15 @@ def toolsr():
         29- Uniscan
         20- websploit
         21- Backdoor Factory
+        22- acccheck
+        23- enum4linux
+        24- exploitdb
+        25- p0f
+        26- parsero
+        27- sfuzz
+        28- sqlninja
+        29- ghost-phisher
+        30- mdk3
         ''')
         option = input("$ ")
         if option == "1":
@@ -138,6 +148,42 @@ def toolsr():
         elif option == "21":
             os.system("clear")
             os.system("apt install backdoor-factory -y")
+            os.system("python3 toolsr.py")
+        elif option == "22":
+            os.system("clear")
+            os.system("apt install acccheck -y")
+            os.system("python3 toolsr.py")
+        elif option == "23":
+            os.system("clear")
+            os.system("apt install enum4linux -y")
+            os.system("python3 toolsr.py")
+        elif option == "24":
+            os.system("clear")
+            os.system("apt install exploitdb -y")
+            os.system("python3 toolsr.py")
+        elif option == "25":
+            os.system("clear")
+            os.system("apt install p0f -y")
+            os.system("python3 toolsr.py")
+        elif option == "26":
+            os.system("clear")
+            os.system("apt install parsero -y")
+            os.system("python3 toolsr.py")
+        elif option == "27":
+            os.system("clear")
+            os.system("apt install sfuzz -y")
+            os.system("python3 toolsr.py")
+        elif option == "28":
+            os.system("clear")
+            os.system("apt install sqlninja -y")
+            os.system("python3 toolsr.py")
+        elif option == "29":
+            os.system("clear")
+            os.system("apt install ghost-phisher -y")
+            os.system("python3 toolsr.py")
+        elif option == "30":
+            os.system("clear")
+            os.system("apt install mdk3 -y")
             os.system("python3 toolsr.py")
         elif option == "0":
             os.system("clear")
