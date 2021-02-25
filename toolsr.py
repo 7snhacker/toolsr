@@ -15,8 +15,17 @@ def toolsr():
     inp = input("$ ")
     if inp == "3":
         os.system("clear")
-        os.system("apt install metasploit-framework sqlmap hash-identifier uniscan weevely backdoor-factory burpsuite armitage websploit john johnny xsser wireshark set aircrack-ng masscan wpscan jsql beef-xss nmap acccheck enum4linux exploitdb p0f parsero sfuzz sqlninja ghost-phisher mdk3 -y")
+        os.system("apt install metasploit-framework sqlmap hash-identifier uniscan weevely backdoor-factory burpsuite armitage websploit john johnny xsser wireshark set aircrack-ng masscan wpscan jsql beef-xss nmap acccheck enum4linux exploitdb p0f parsero sfuzz sqlninja ghost-phisher mdk3 hydra-gtk -y")
         os.system("apt install git -y && git clone git://git.kali.org/packages/gr-scan.git")
+        os.system("apt install git && git clone https://github.com/hangetzzu/saycheese.git")
+        os.system("apt install git && git clone https://github.com/suljot/shellphish.git")
+        os.system("apt install git && git clone https://github.com/DarkSecDevelopers/HiddenEye-Legacy.git")
+        os.system("apt install git && git clone https://github.com/wifiphisher/wifiphisher.git")
+        os.system("apt install git && git clone https://github.com/UndeadSec/SocialFish.git")
+        os.system("apt install git && git clone https://github.com/htr-tech/zphisher.git")
+        os.system("apt install git && git clone https://github.com/Cyb0r9/SocialBox.git")
+        os.system("apt install git && git clone https://github.com/Mebus/cupp.git")
+        os.system("apt install git && git clone https://github.com/the-robot/sqliv.git")
         os.system("clear")
         os.system("ls")
     elif inp == "4":
@@ -62,6 +71,16 @@ def toolsr():
         28- sqlninja
         29- ghost-phisher
         30- mdk3
+        31- saycheese
+        32- shellphish
+        33- HiddenEye
+        34- wifiphisher
+        35- SocialFish
+        36- zphisher
+        37- SocialBox
+        38- cupp
+        39- hydra
+        40- sqliv
         ''')
         option = input("$ ")
         if option == "1":
@@ -185,11 +204,50 @@ def toolsr():
             os.system("clear")
             os.system("apt install mdk3 -y")
             os.system("python3 toolsr.py")
+        elif option == "31":
+            os.system("clear")
+            os.system("apt install git && git clone https://github.com/hangetzzu/saycheese.git")
+            os.system("python3 toolsr.py")
+        elif option == "32":
+            os.system("clear")
+            os.system("apt install git && git clone https://github.com/suljot/shellphish.git")
+            os.system("python3 toolsr.py")
+        elif option == "33":
+            os.system("clear")
+            os.system("apt install git && git clone https://github.com/DarkSecDevelopers/HiddenEye-Legacy.git")
+            os.system("python3 toolsr.py")
+        elif option == "34":
+            os.system("clear")
+            os.system("apt install git && git clone https://github.com/wifiphisher/wifiphisher.git")
+            os.system("python3 toolsr.py")
+        elif option == "35":
+            os.system("clear")
+            os.system("apt install git && git clone https://github.com/UndeadSec/SocialFish.git")
+            os.system("python3 toolsr.py")
+        elif option == "36":
+            os.system("clear")
+            os.system("apt install git && git clone https://github.com/htr-tech/zphisher.git")
+            os.system("python3 toolsr.py")
+        elif option == "37":
+            os.system("clear")
+            os.system("apt install git && git clone https://github.com/Cyb0r9/SocialBox.git")
+            os.system("python3 toolsr.py")
+        elif option == "38":
+            os.system("clear")
+            os.system("apt install git && git clone https://github.com/Mebus/cupp.git")
+            os.system("python3 toolsr.py")
+        elif option == "39":
+            os.system("clear")
+            os.system("apt install hydra-gtk")
+            os.system("python3 toolsr.py")
+        elif option == "40":
+            os.system("clear")
+            os.system("apt install git && git clone https://github.com/the-robot/sqliv.git")
+            os.system("python3 toolsr.py")
         elif option == "0":
             os.system("clear")
             os.system("python3 toolsr.py")
 toolsr()
-
 
 
 
