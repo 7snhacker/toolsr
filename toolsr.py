@@ -21,6 +21,7 @@ def toolsr():
         os.system("git clone https://github.com/7snhacker/toolsr.git")
         os.system("rm toolsr.py")
         os.system("rm README.md")
+        os.system("clear")
         os.system("ls")
     elif inp == "1":
          os.system("clear")
