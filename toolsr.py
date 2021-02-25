@@ -18,9 +18,10 @@ def toolsr():
         os.system("apt install metasploit-framework sqlmap hash-identifier uniscan weevely backdoor-factory burpsuite armitage websploit john johnny xsser wireshark set aircrack-ng masscan wpscan jsql beef-xss nmap -y")
         os.system("apt install git -y && git clone git://git.kali.org/packages/gr-scan.git")
     elif inp == "4":
-        os.system("cd ..")
-        os.system("rm -rf toolsr")
         os.system("git clone https://github.com/7snhacker/toolsr.git")
+        os.system("rm toolsr.py")
+        os.system("rm README.md")
+        os.system("ls")
     elif inp == "1":
          os.system("clear")
          os.system("apt install python python2 ruby git php perl bash wget unzip curl -y")
