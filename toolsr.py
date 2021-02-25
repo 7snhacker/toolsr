@@ -11,7 +11,7 @@ def toolsr():
     pkgs = print("1- install Packages")
     tools = print("2- Show tools")
     toolsr = print("3- install all tools")
-    reinstall = print("2- Reinstall script ( Update )")
+    reinstall = print("4- Reinstall script ( Update )")
     inp = input("$ ")
     if inp == "3":
         os.system("clear")
