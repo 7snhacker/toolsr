@@ -12,6 +12,7 @@ def toolsr():
     tools = print("2- Show tools")
     toolsr = print("3- install all tools")
     reinstall = print("4- Reinstall script ( Update )")
+    repo = print("5- Add Kali repositories")
     inp = input("$ ")
     if inp == "3":
         os.system("clear")
@@ -28,6 +29,18 @@ def toolsr():
         os.system("apt install git && git clone https://github.com/the-robot/sqliv.git")
         os.system("clear")
         os.system("ls")
+    elif inp == "5":
+        os.system("apt-key adv --keyserver pool.sks-keyservers.net --recv-keys ED444FF07D8D0BF6")
+        os.system('echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" | sudo tee /etc/apt/sources.list')
+        update = input("Update && Upgrade Y/n $ ")
+        if update == "Y":
+            os.system("apt update && apt upgrade -y")
+        elif update == "N":
+            os.system("python3 toolsr.py")
+        elif update == "y":
+            os.system("apt update && apt upgrade -y")
+        elif update == "n":
+            os.system("python3 toolsr.py")
     elif inp == "4":
         os.system("git clone https://github.com/7snhacker/toolsr.git")
         os.system("rm toolsr.py")
